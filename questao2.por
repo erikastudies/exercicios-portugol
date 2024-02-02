@@ -1,34 +1,53 @@
-programa
+programa
 {
-	
-	funcao inicio()
-	{
-	real produto1
-	real produto2
-	real produto3
-	
-		escreva("Insira o valor do produto 1:")
-		leia(produto1)
-		escreva("Insira o valor do produto 2:")
-		leia(produto2)
-		escreva("Insira o valor do produto 3:")
-		leia(produto3)
+    /*
+    2 - Faça um programa, utilizando os operadores lógicos, que:
+    Peça para o usuário inserir o nome de três produtos de mercado e seus, respectivos, preços
+    Mostre na tela o produto mais barato
+    */
 
-		se (produto1 < produto2) && (produto1 < produto3)  entao
-			escreva("O primeiro produto inserido é o de menor valor:")	
-			senao se (produto2 < produto1) && (produto2 < produto3) entao
-			escreva("O segundo produto é o de menor valor")
-			senao
-			escreva("O produto de  menor valor é o produto 3")
+    funcao inicio()
+    {
+        cadeia nome1, nome2, nome3
+        real preco1, preco2, preco3
+        real menorPreco
 
-	}
+        escreva("Digite o nome do primeiro produto: ")
+        leia(nome1)
+        escreva("Digite o preço do primeiro produto: ")
+        leia(preco1)
+
+        escreva("Digite o nome do segundo produto: ")
+        leia(nome2)
+        escreva("Digite o preço do segundo produto: ")
+        leia(preco2)
+
+        escreva("Digite o nome do terceiro produto: ")
+        leia(nome3)
+        escreva("Digite o preço do terceiro produto: ")
+        leia(preco3)
+
+        se (preco1 < preco2 e preco1 < preco3) {
+            menorPreco = preco1
+            escreva("O produto mais barato é " + nome1 + " com preço de R$ " + menorPreco)
+        }
+        senao se (preco2 < preco1 e preco2 < preco3) {
+            menorPreco = preco2
+            escreva("O produto mais barato é " + nome2 + " com preço de R$ " + menorPreco)
+        }
+        senao {
+            menorPreco = preco3
+            escreva("O produto mais barato é " + nome3 + " com preço de R$ " + menorPreco)
+        }
+    }
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 82; 
+ * @POSICAO-CURSOR = 653; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
