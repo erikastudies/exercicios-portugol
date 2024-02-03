@@ -19,6 +19,7 @@ Mostre na tela uma mensagem, de sua escolha, quando ele não estiver com fome ou
 		escreva("Você tem dinheiro?")
 		leia(temDinheiro)
 
+
 		se (temFome == verdadeiro e temDinheiro == verdadeiro)
 			escreva("Vá ao galego lanches.")
 		senao 
@@ -33,7 +34,7 @@ Mostre na tela uma mensagem, de sua escolha, quando ele não estiver com fome ou
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 706; 
+ * @POSICAO-CURSOR = 710; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, vazio;
